@@ -14,7 +14,8 @@
             Console.Write("I am Program.cs. What is your name? (PLEASE INPUT NAME): ");
             username = Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Your username is " + username);
+            Console.Write("Hello " + username);
+            Console.WriteLine(" How old are you?");
             }
         }
 }
