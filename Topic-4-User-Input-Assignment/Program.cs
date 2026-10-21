@@ -67,7 +67,7 @@
             double average;
             Console.WriteLine("This is a government data collection program. (Press Enter To Continue Dialogue)");
             Console.WriteLine();
-            Console.WriteLine("It is designed to keep as much surveillance as possible on the population of St.Thomas.");
+            Console.WriteLine("It is designed to keep as much surveillance as possible on the population of Parkside.");
             Console.WriteLine();
             Console.WriteLine("Please enter your firstname. (False aliases will NOT be tolerated.)");
             firstname = Console.ReadLine();
@@ -110,8 +110,21 @@
             Console.Clear();
             Console.Write(login);
             Console.WriteLine(". Very intriguing login.");
-
-            Console.WriteLine("Fi");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Final piece of information:");
+            Console.WriteLine("What is your percent average this year?");
+            average = Convert.ToDouble(Console.ReadLine());
+            Console.Clear();
+            Console.WriteLine("Here is an overview of your provided information:");
+            Console.WriteLine("Student Information:");
+            Console.WriteLine("Student Login: " + login);
+            Console.WriteLine("Identification: " + ID);
+            Console.Write("Student Name: " + lastname);
+            Console.Write(", ");
+            Console.WriteLine(firstname);
+            Console.WriteLine("Student % AVG: " + average);
+            Console.WriteLine("Student Grade: " + year);
         }
     }
 }
