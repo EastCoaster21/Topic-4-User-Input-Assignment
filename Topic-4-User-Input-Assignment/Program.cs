@@ -109,7 +109,9 @@
             login = Console.ReadLine();
             Console.Clear();
             Console.Write(login);
-            Console.WriteLine(". Very intriguing");
+            Console.WriteLine(". Very intriguing login.");
+
+            Console.WriteLine("Fi");
         }
     }
 }
