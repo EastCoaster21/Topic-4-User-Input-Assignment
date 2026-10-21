@@ -4,8 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Part1();
-            Part2();
+            Console.WriteLine("Choose your part (Ideally start from 1):");
+            Console.WriteLine();
+            Console.WriteLine("1-Basic conversation.");
+            Console.WriteLine("2-Totally legal data collection.");
+            int choice;
+            choice = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            if (choice == 1)
+            {
+                Part1();
+            }
+            else if (choice == 2)
+            {
+                Part2();
+            }
         }
         //Console.WriteLine("Assignment by Easton Powers");
         //Console.WriteLine("User inputs name, age and salary");
@@ -18,7 +31,6 @@
             username = Console.ReadLine();
             Console.WriteLine();
             Console.Clear();
-
             Console.Write("What's up, " + username);
             Console.WriteLine("?");
             Console.WriteLine();
@@ -40,11 +52,64 @@
             Console.Write(" at ");
             Console.WriteLine( age + "?");
             Console.WriteLine("I hope that's per hour and not per day. Good on you regardless, " + username);
+            Console.WriteLine("Press Enter To Quit");
+            Console.ReadLine();
+            Console.Clear();
         }
         //Console.WriteLine("User inputs ");
         public static void Part2()
         {
-            
+            string firstname;
+            string lastname;
+            int year;
+            int ID;
+            string login;
+            double average;
+            Console.WriteLine("This is a government data collection program. (Press Enter To Continue Dialogue)");
+            Console.WriteLine();
+            Console.WriteLine("It is designed to keep as much surveillance as possible on the population of St.Thomas.");
+            Console.WriteLine();
+            Console.WriteLine("Please enter your firstname. (False aliases will NOT be tolerated.)");
+            firstname = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Thank you for your cooperation " + firstname);
+            Console.Clear();
+            Console.WriteLine("Now your legal lastname.");
+            lastname = Console.ReadLine();
+            Console.Clear();
+            Console.Write(firstname);
+            Console.Write(" ");
+            Console.Write(lastname);
+            Console.WriteLine("... Interesting.");
+            Console.WriteLine();
+            Console.Write("And what grade are you in " + firstname);
+            Console.Write(" ");
+            Console.Write(lastname);
+            Console.WriteLine("?");
+            year = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            Console.Write("Only grade " + year);
+            Console.WriteLine("? I Thought You Were Older.");
+            Console.WriteLine();
+            Console.WriteLine("Im gonna need proof. Enter your student ID:");
+            ID = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            Console.Write(ID);
+            Console.WriteLine("? Let me run that through the system.");
+            Console.ReadLine();
+            Console.WriteLine("...");
+            Console.ReadLine();
+            Console.WriteLine("...");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Info checks out. You're lucky. We're almost done here. I just need a few more things.");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Please enter your school login.");
+            login = Console.ReadLine();
+            Console.Clear();
+            Console.Write(login);
+            Console.WriteLine(". Very intriguing");
         }
     }
 }
